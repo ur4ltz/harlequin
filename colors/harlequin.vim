@@ -213,7 +213,7 @@ call s:Highlight('MoreMsg',         s:lime, '', '', '')
   
 call s:Highlight('WildMenu',        s:black, s:lilac, 'bold', '')
 
-call s:Highlight('Title',           '', '', 'underline', '')
+call s:Highlight('Title',           '', '', '', '')
 
 call s:HighlightX('Tag',            '', '', 'bold', '')
 
@@ -228,12 +228,15 @@ call s:Highlight('rubyModuleNameTag',     s:text, '', '', '')
 call s:Highlight('rubyPseudoVariable',    s:text, '', '', '')
 call s:Highlight('rubyClass',             s:cerise, '', '', '')
 call s:Highlight('rubyClassNameTag',      s:gold, '', '', '')
-call s:Highlight('rubySymbol',            s:gold, '', '', '')
+call s:Highlight('rubySymbol',            s:lime, '', '', '')
+call s:Highlight('rubyInstanceVariable',  s:lime, '', '', '')
+call s:Highlight('rubyControl',           s:gold, '', '', '')
 call s:Highlight('rubyDefine',            s:cerise, '', '', '')
-call s:Highlight('rubyConstant',          s:text, '', '', '')
+call s:Highlight('rubyConstant',          s:gold, '', '', '')
 call s:Highlight('rubyStringDelimiter',   s:sunny, '', '', '')
 call s:Highlight('rubyInterpolation',     s:lilac, '', '', '')
 call s:Highlight('rubyInterpolationDelimiter',     s:lilac, '', '', '')
+hi! link rubyGlobalVariable rubyInstanceVariable
 
 "*** JAVASCRIPT ***
 call s:Highlight('javaScriptNull',        s:lilac, '', 'bold', '')
